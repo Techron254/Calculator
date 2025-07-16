@@ -20,9 +20,10 @@ main{
 h4{
     color: rgb(223, 130, 10);
     text-align: center;
+    padding-bottom: 5px;
 }
 .display{
-    background-color: aliceblue;
+    background-color: rgb(159, 158, 158);
     width: 320px;
     height: 100px;
     margin: 2rem auto;
@@ -30,13 +31,17 @@ h4{
     margin-bottom: 0.5rem;
     padding: 5px;
     border-radius: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: right;
+    padding: 10px;
 }
 .keypad{
     width: 320px;
     height: 350px;
     display: flex;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .right-operators{
     display: flex;
@@ -51,7 +56,7 @@ h4{
 }
 .right-operators button{
     width: 100%;
-    margin: 4px 5px;
+    margin: 5px;
     flex-grow: 1;
 }
 .numbers{
@@ -83,12 +88,11 @@ button:active{
 #plus{
   flex-grow: 2;
     margin-bottom: 0;
-    height: 120px;
+    height: 126px;
 }
 #del{
-    background-color: rgba(232, 25, 25, 0.489);
+    background-color: rgba(251, 2, 2, 0.489);
     border: 1px solid red;
-    font-size: 1rem;
 }
 #del:active{
     background-color: red;

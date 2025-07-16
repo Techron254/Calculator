@@ -1,0 +1,6 @@
+#A short story...
+
+So back in the days when I was a kid, we used to have a calculator and I'd spend some time playing with it. It blew my mind how it always knew the right answers no matter how big the numbers operated on it were. I used to imagine how super genius the person who made it was because I thought he did all those calculations manually and put the answers in the calculator! 😂😂😂. Fast forward now I have coded my own calculator and yes, it "knows all the answers." I feel like that super genius I used to imagine as a child of course.😅
+
+#About this project.
+So I integrated both grid and flexbox in this project. The initial instructions were to make a simple calculator that takes only two operands and uses functions to execute the expression. As usual I decided to go overboard and code a fully functional one that takes in multiple operands and operators and can work just like the calculator app you can have on your phone. We were warned to not use eval() so I avoided it alltogether though it would have been very easier using it.
