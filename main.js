@@ -32,6 +32,8 @@ buttons.forEach(button => {
 
 const delButton = document.getElementById('del');
 delButton.addEventListener('mousedown', startPress);
+delButton.addEventListener('touchstart', startPress);
+delButton.addEventListener('touchend', cancelPress);
 delButton.addEventListener('mouseup', endPress);
 function startPress(e) {
     e.preventDefault();
