@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    padding: 5rem;
     background-color: #4b4343;
 }
 main{
@@ -31,7 +32,7 @@ h4{
     margin-bottom: 0.5rem;
     padding: 5px;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
     text-align: right;
     padding: 10px;
@@ -40,8 +41,7 @@ h4{
     width: 320px;
     height: 350px;
     display: flex;
-    margin: auto;
-    /* border: 1px solid red; */
+    margin: auto;/
 }
 .right-operators{
     display: flex;
@@ -54,10 +54,22 @@ h4{
     margin-top: 0;   
     margin-bottom: 0;         
 }
-.right-operators button{
+.right-operators button {
     width: 100%;
     margin: 5px;
     flex-grow: 1;
+    background-color: rgba(255, 143, 15, 0.678);
+    border: 1px solid rgb(255, 153, 0);
+}
+#AC, #division, #percent {
+    background-color:  rgba(255, 143, 15, 0.678) ;
+    border: 1px solid rgb(255, 153, 0);
+}
+.right-operators button:active{
+    background-color: rgb(255, 143, 15);
+}
+#AC:active, #division:active, #percent:active {
+    background-color: rgb(255, 143, 15);
 }
 .numbers{
     width: 350px;
