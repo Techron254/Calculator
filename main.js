@@ -1,6 +1,5 @@
 
 const display = document.querySelector('.display');
-
 const buttons = document.querySelectorAll('.keypad button');
 buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -16,7 +15,8 @@ buttons.forEach(button => {
         }
         else if (value === '=') {
             try {
-                display.textContent = eval(display.textContent);
+                import * as math from 'mathjs';
+                display.textContent = math.evaluate(display.textContent);
             } catch {
                 display.textContent = 'Math Error';
             }
