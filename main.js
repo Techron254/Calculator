@@ -15,14 +15,18 @@ buttons.forEach(button => {
         }
         else if (value === '=') {
             try {
-                import * as math from 'mathjs';
                 display.textContent = math.evaluate(display.textContent);
-            } catch {
+            }
+            catch {
                 display.textContent = 'Math Error';
+            }
+            if (display.textContent.includes('[',']')){
+                display.textContent = display.textContent.replace('[', '');
+                display.textContent = display.textContent.replace(']', '');
             }
         } 
         else if (value === 'del') {
-            display.textContent = display.textContent.toString().slice(0, -1);
+            display.textContent = display.textContent.slice(0, -1);
         }
         else {
             display.textContent += value;
