@@ -41,7 +41,12 @@ h4{
     font-weight: bolder;
     text-align: right;
     padding: 10px;
+  
+  white-space: wrap;      
+  overflow: hidden;        
+  text-overflow: ellipsis;  
 }
+
 .keypad{
     width: 280px;
     height: 350px;
